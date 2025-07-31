@@ -3,8 +3,8 @@
                         background-color: #0E0918;
                         color: #888293;
                         font-family: geomanist, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-                        font-variation-settings: 'wght' 194.2857, 'wdth' 100, 'slnt' 0;
-                        height: 900vh;
+                        font-variation-settings: 'wght'194.2857, 'wdth'100, 'slnt'0;
+                        /* height: 900vh; */
                     }
                     /* Animation للـ gradient */
                     
@@ -20,6 +20,10 @@
                         }
                     }
                     
+                    .loader {
+                        @apply border-t-transparent border-white border-solid;
+                    }
+                    
                     @import "tailwindcss";
                      :root {
                         --background: #ffffff;
@@ -33,6 +37,7 @@
                         margin: 0;
                         scroll-behavior: smooth;
                     }
+                    /* globals.css */
                     
                     .sticky {
                         position: sticky;
@@ -61,7 +66,7 @@
                         left: 0;
                         width: 100%;
                         height: 100%;
-                        background: radial-gradient( circle, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 70%);
+                        background: radial-gradient(circle, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 70%);
                         transform: scale(0);
                         transition: transform 0.5s ease;
                     }
@@ -89,6 +94,7 @@
                         box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
                         transition: all 1s;
                         overflow: hidden;
+                        cursor: pointer;
                     }
                     
                     .buttonsec1::before {
@@ -99,7 +105,7 @@
                         height: 100%;
                         width: 0;
                         border-radius: 15px;
-                        background-color: #212121;
+                        background-color: #1178ff;
                         z-index: -1;
                         -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
                         box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
@@ -134,7 +140,7 @@
                         color: rgb(234, 234, 234);
                         font-weight: 700;
                         transition: all 0.8s;
-                        box-shadow: 0px 0px 60px #a85d27;
+                        box-shadow: 0px 0px 60px #128de5;
                         -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4));
                     }
                     
@@ -144,14 +150,14 @@
                     
                     .btn-sec5:hover {
                         background: rgb(2, 29, 78);
-                        background: linear-gradient(270deg, #CF7926 0%, #C24324 60%);
+                        background: linear-gradient(270deg, #7708ff 0%, #0890ff 60%);
                         color: rgb(4, 4, 38);
                     }
                     
                     .button-g {
                         background-color: #ffffff00;
                         color: #fff;
-                        width: 8.5em;
+                        width: fit-content;
                         height: 2.9em;
                         border: #45464885 0.2em solid;
                         border-radius: 11px;
@@ -178,4 +184,31 @@
                     
                     .text-g {
                         margin: 0 2.5em
+                    }
+                    
+                    a:hover,
+                    button:hover {
+                        cursor: none !important;
+                        /* force custom cursor */
+                    }
+                    
+                    @keyframes gradient-shimmer {
+                        0% {
+                            background-position: 0% 50%;
+                        }
+                        100% {
+                            background-position: 100% 50%;
+                        }
+                    }
+                    
+                    .animate-gradient-shimmer {
+                        background-size: 200% 200%;
+                        animation: gradient-shimmer 2s ease-in-out infinite;
+                    }
+                    /* styles/circle-gradient.css */
+                    
+                    .circle-gradient {
+                        background: radial-gradient(50% 50% at 50% 50%, rgba(3, 32, 248, 0.4) 0%, rgba(248, 154, 12, 0) 100%);
+                        width: 100%;
+                        height: 100%;
                     }

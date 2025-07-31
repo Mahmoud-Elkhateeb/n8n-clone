@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Footer = () => {
     return (
-        <section className="w-full px-4 md:px-8 lg:px-12 py-8 md:py-12 lg:py-16 bg-shades-black relative z-50"
+        <section className="w-full px-4 md:px-8 lg:px-12 py-8 md:py-12 lg:py-16 bg-shades-black relative z-49"
         data-aos="fade-up"
                                   data-aos-duration="1000"
                                   data-aos-delay="400">

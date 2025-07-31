@@ -88,7 +88,7 @@ export default function TestimonialCarousel() {
                         data-aos-duration="1000"
                         data-aos-delay="400"
                         key={index}
-                        className="flex-shrink-0 w-[320px] sm:w-[360px] md:w-[600px]  bg-gradient-to-t from-[#1b3969] via-[#1A091A] to-[#1B0A1B] p-6 rounded-2xl hove:shadow-xl border-1 border-[#767676c3] transition-colors hover:from-[#3064b8] hover:via-[#341234] hover:to-[#1B0A1B] duration-500">
+                        className="flex-shrink-0 w-[320px] sm:w-[360px] md:w-[600px]  bg-gradient-to-t from-[#0d3471] via-[#001b7e] to-[#321158] p-6 rounded-2xl hove:shadow-xl border-1 border-[#767676c3] transition-colors hover:from-[#1352b8] hover:via-[#001b7e] hover:to-[#321158] duration-500">
                         <p className="text-[1.5em] leading-relaxed mb-6 py-7">{item.text}</p>
                         <div className="flex items-center gap-3">
                             <Image
