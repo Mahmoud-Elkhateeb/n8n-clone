@@ -186,12 +186,6 @@
                         margin: 0 2.5em
                     }
                     
-                    a:hover,
-                    button:hover {
-                        cursor: none !important;
-                        /* force custom cursor */
-                    }
-                    
                     @keyframes gradient-shimmer {
                         0% {
                             background-position: 0% 50%;

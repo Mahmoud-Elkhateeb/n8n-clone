@@ -1,7 +1,5 @@
 'use client';
 
-import AnimatedCursor from 'react-animated-cursor';
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from './components/Footer';
 import Navbar from "./components/Navbar";
@@ -37,16 +35,7 @@ const pathname = usePathname();
   return (
     <html >
       <body>
-        <AnimatedCursor
-          innerSize={8}
-          outerSize={35}
-          color="255, 0, 102"
-          outerAlpha={0.2}
-          innerScale={1}
-          outerScale={2}
-          trailingSpeed={6}
-          showSystemCursor={false}
-        />
+        
         <Navbar />
         {loading ? <Loader /> : children}
         <Footer />
