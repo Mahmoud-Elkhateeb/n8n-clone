@@ -23,28 +23,28 @@ export default function Home() {
     {
       title: "COMPANY",
       desc: "▶ Constant Growth is a Saudi-based software company",
-      img: "/cgtech/mockup1.png",
+      img: "/cgtech/image.png",
     },
     {
 
       title: "VISION",
       desc: "⚡ To become a leading regional technology provider recognized",
-      img: "/cgtech/mockup4.png", // put your images in public folder
+      img: "/cgtech/image2.png", // put your images in public folder
     },
     {
       title: "MISION",
       desc: "⚡ To enable organizations in Saudi Arabia and the region to grow through digital innovation",
-      img: "/cgtech/mockup2.png",
+      img: "/cgtech/image3.png",
     },
     {
       title: "VALUES",
       desc: "⚡ We are guided by a set of core values that form the foundation of our organizational culture.",
-      img: "/cgtech/mockup6.png",
+      img: "/cgtech/image4.png",
     },
     {
       title: "SERVICES",
       desc: "⚡ ERP IMPLEMENTATION, CUSTOM BUSINESS APPLICATIONS etc...",
-      img: "/cgtech/mockup3.png",
+      img: "/cgtech/image5.png",
     },
 
   ];
@@ -582,7 +582,7 @@ export default function Home() {
     <main className="flex justify-center flex-col">
       <div
 
-        className="relative w-full sm:w-full md:w-full lg:w-full xl:w-[58%]   flex items-center justify-center sm:justify-normal lg:overflow-hidden m-auto">
+        className="relative w-full sm:w-full md:w-full lg:w-full xl:h-[100vh] lg:h-[100vh]   flex items-center justify-center sm:justify-normal lg:overflow-hidden m-auto">
         <video
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in-back"
@@ -604,10 +604,10 @@ export default function Home() {
           data-aos-offset="0"
           src="/images/logo-nav.svg"
           alt="Your image"
-          className="absolute sm:top-[40%]   sm:left-[55%] lg:w-[500px] md:w-[350px] sm:w-[300px] w-[290px] top-[50%]    object-cover z-10 "
+          className="absolute sm:top-[40%]   sm:left-[55%] lg:w-[500px] xl:w-[700px] md:w-[350px] sm:w-[300px] w-[290px] top-[50%]    object-cover z-10 "
         />
-        <div className="flex flex-col items-center justify-center w-full sm:w-[55%] p-5 text-white relative z-20 sm:text-center">
-          <div className="lg:text-left sm:text-center  max-w-full mt-30">
+        <div className="flex flex-col items-center justify-center w-full sm:w-[55%] p-5 text-white relative z-20 ">
+          <div className="lg:text-left   xl:max-w-[50%] mt-30">
             <h1
               data-aos="fade-up"
               data-aos-duration="2000"
@@ -649,12 +649,12 @@ export default function Home() {
       </div>
       {/* /////////////////////////////////////////////////////////////////////////////// */}
       {/* second-section */}
-      <div className="w-full flex justify-center mt-15 sm:mt-0">
+      <div className="w-full flex justify-center mt-15 sm:mt-0 xl:mt-[150]">
         {/* Main container */}
         <div
           className="
           relative overflow-hidden rounded-3xl p-0
-          w-full lg:w-[60%]
+          w-full xl:w-[60%]
           bg-black/50 border-4
           border-gradient-to-r
         "
@@ -663,8 +663,8 @@ export default function Home() {
           {/* Cards at the top */}
           <div className="relative z-10 flex flex-col sm:flex-col md:flex-wrap md:flex-row justify-center gap-4 p-3"
             data-aos="fade-up"
-            data-aos-duration="2000"
-            data-aos-delay="1300">
+            data-aos-duration="1000"
+            data-aos-delay="100">
             {cards.map((card, index) => (
               <div key={index} className="w-full md:w-auto flex flex-col items-center">
                 <div
