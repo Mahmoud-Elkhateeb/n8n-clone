@@ -2,7 +2,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect, useRef, useCallback } from 'react';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Contact from './emailjs';
 

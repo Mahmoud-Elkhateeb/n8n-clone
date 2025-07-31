@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Loader from './components/Loader';
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
+import CustomCursor from "./components/CustomCursor";
 
 
 
@@ -33,9 +34,9 @@ const pathname = usePathname();
 
 
   return (
-    <html >
+    <html bbai-tooltip-injected="true">
       <body>
-        
+        <CustomCursor/>
         <Navbar />
         {loading ? <Loader /> : children}
         <Footer />

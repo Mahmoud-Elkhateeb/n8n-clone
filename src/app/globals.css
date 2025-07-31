@@ -1,208 +1,208 @@
-                    body {
-                        /* background: linear-gradient(to bottom, #0E0918, #381D40, #714237, #343056, #1A0D1E, #6C1B34); */
-                        background-color: #0E0918;
-                        color: #888293;
-                        font-family: geomanist, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-                        font-variation-settings: 'wght'194.2857, 'wdth'100, 'slnt'0;
-                        /* height: 900vh; */
-                    }
-                    /* Animation للـ gradient */
-                    
-                    @keyframes gradientBG {
-                        0% {
-                            background-position: 0% 50%;
-                        }
-                        50% {
-                            background-position: 100% 50%;
-                        }
-                        100% {
-                            background-position: 0% 50%;
-                        }
-                    }
-                    
-                    .loader {
-                        @apply border-t-transparent border-white border-solid;
-                    }
-                    
-                    @import "tailwindcss";
-                     :root {
-                        --background: #ffffff;
-                        --foreground: #171717;
-                    }
-                    /* styles/globals.css */
-                    
-                    html,
-                    body {
-                        /* height: 100%; */
-                        margin: 0;
-                        scroll-behavior: smooth;
-                    }
-                    /* globals.css */
-                    
-                    .sticky {
-                        position: sticky;
-                        will-change: transform, opacity;
-                    }
-                    
-                    .boton-elegante {
-                        padding: 15px 30px;
-                        border: 2px solid #2c2c2c;
-                        background-color: #1a1a1a;
-                        color: #ffffff;
-                        font-size: 0.9rem;
-                        cursor: pointer;
-                        border-radius: 30px;
-                        transition: all 0.4s ease;
-                        outline: none;
-                        position: relative;
-                        overflow: hidden;
-                        font-weight: bold;
-                    }
-                    
-                    .boton-elegante::after {
-                        content: "";
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        background: radial-gradient(circle, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 70%);
-                        transform: scale(0);
-                        transition: transform 0.5s ease;
-                    }
-                    
-                    .boton-elegante:hover::after {
-                        transform: scale(4);
-                    }
-                    
-                    .boton-elegante:hover {
-                        border-color: #666666;
-                        background: #292929;
-                    }
-                    
-                    .buttonsec1 {
-                        padding: 15px 25px;
-                        border: 2px solid #2c2c2c;
-                        border-radius: 30px;
-                        color: #212121;
-                        z-index: 1;
-                        background: #e8e8e8;
-                        position: relative;
-                        font-weight: 1000;
-                        font-size: 0.9rem;
-                        -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-                        box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-                        transition: all 1s;
-                        overflow: hidden;
-                        cursor: pointer;
-                    }
-                    
-                    .buttonsec1::before {
-                        content: "";
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        height: 100%;
-                        width: 0;
-                        border-radius: 15px;
-                        background-color: #1178ff;
-                        z-index: -1;
-                        -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-                        box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-                        transition: all 750ms
-                    }
-                    
-                    .buttonsec1:hover {
-                        color: #e8e8e8;
-                    }
-                    
-                    .buttonsec1:hover::before {
-                        width: 100%;
-                    }
-                    
-                    .border-gradient-to-r {
-                        border: 8px solid transparent;
-                        border-radius: 1.5rem;
-                        /* match rounded-3xl */
-                        background: linear-gradient(#00000088, #00000088) padding-box, linear-gradient(to right, #503935, #2B3766) border-box;
-                    }
-                    /* sec-5 */
-                    
-                    .btn-sec5 {
-                        font-size: 0.9rem;
-                        padding: 1rem 2.5rem;
-                        border: none;
-                        outline: none;
-                        border-radius: 0.4rem;
-                        cursor: pointer;
-                        text-transform: uppercase;
-                        background-color: rgb(14, 14, 26);
-                        color: rgb(234, 234, 234);
-                        font-weight: 700;
-                        transition: all 0.8s;
-                        box-shadow: 0px 0px 60px #128de5;
-                        -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4));
-                    }
-                    
-                    .btn-sec5:active {
-                        scale: 0.92;
-                    }
-                    
-                    .btn-sec5:hover {
-                        background: rgb(2, 29, 78);
-                        background: linear-gradient(270deg, #7708ff 0%, #0890ff 60%);
-                        color: rgb(4, 4, 38);
-                    }
-                    
-                    .button-g {
-                        background-color: #ffffff00;
-                        color: #fff;
-                        width: fit-content;
-                        height: 2.9em;
-                        border: #45464885 0.2em solid;
-                        border-radius: 11px;
-                        text-align: right;
-                        transition: all 0.6s ease;
-                    }
-                    
-                    .button-g:hover {
-                        background-color: #38363687;
-                        cursor: pointer;
-                    }
-                    
-                    .button-g svg {
-                        width: 1.9em;
-                        /* margin: -0.2em 0.8em 1em; */
-                        position: absolute;
-                        display: flex;
-                        transition: all 0.6s ease;
-                    }
-                    
-                    .button-g:hover svg {
-                        transform: translateX(5px);
-                    }
-                    
-                    .text-g {
-                        margin: 0 2.5em
-                    }
-                    
-                    @keyframes gradient-shimmer {
-                        0% {
-                            background-position: 0% 50%;
-                        }
-                        100% {
-                            background-position: 100% 50%;
-                        }
-                    }
-                    
-                    .animate-gradient-shimmer {
-                        background-size: 200% 200%;
-                        animation: gradient-shimmer 2s ease-in-out infinite;
-                    }
-                    /* styles/circle-gradient.css */
-                    
-                    .circle-gradient {
-                        background: radial-gradient(50% 50% at 50% 50%, rgba(3, 32, 248, 0.4) 0%, rgba(248, 154, 12, 0) 100%);
-                        width: 100%;
-                        height: 100%;
-                    }
+                   body {
+                       /* background: linear-gradient(to bottom, #0E0918, #381D40, #714237, #343056, #1A0D1E, #6C1B34); */
+                       background-color: #0E0918;
+                       color: #888293;
+                       font-family: geomanist, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                       font-variation-settings: 'wght'194.2857, 'wdth'100, 'slnt'0;
+                       /* height: 900vh; */
+                   }
+                   /* Animation للـ gradient */
+                   
+                   @keyframes gradientBG {
+                       0% {
+                           background-position: 0% 50%;
+                       }
+                       50% {
+                           background-position: 100% 50%;
+                       }
+                       100% {
+                           background-position: 0% 50%;
+                       }
+                   }
+                   
+                   .loader {
+                       @apply border-t-transparent border-white border-solid;
+                   }
+                   
+                   @import "tailwindcss";
+                    :root {
+                       --background: #ffffff;
+                       --foreground: #171717;
+                   }
+                   /* styles/globals.css */
+                   
+                   html,
+                   body {
+                       /* height: 100%; */
+                       margin: 0;
+                       scroll-behavior: smooth;
+                   }
+                   /* globals.css */
+                   
+                   .sticky {
+                       position: sticky;
+                       will-change: transform, opacity;
+                   }
+                   
+                   .boton-elegante {
+                       padding: 15px 30px;
+                       border: 2px solid #2c2c2c;
+                       background-color: #1a1a1a;
+                       color: #ffffff;
+                       font-size: 0.9rem;
+                       cursor: pointer;
+                       border-radius: 30px;
+                       transition: all 0.4s ease;
+                       outline: none;
+                       position: relative;
+                       overflow: hidden;
+                       font-weight: bold;
+                   }
+                   
+                   .boton-elegante::after {
+                       content: "";
+                       position: absolute;
+                       top: 0;
+                       left: 0;
+                       width: 100%;
+                       height: 100%;
+                       background: radial-gradient(circle, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 70%);
+                       transform: scale(0);
+                       transition: transform 0.5s ease;
+                   }
+                   
+                   .boton-elegante:hover::after {
+                       transform: scale(4);
+                   }
+                   
+                   .boton-elegante:hover {
+                       border-color: #666666;
+                       background: #292929;
+                   }
+                   
+                   .buttonsec1 {
+                       padding: 15px 25px;
+                       border: 2px solid #2c2c2c;
+                       border-radius: 30px;
+                       color: #212121;
+                       z-index: 1;
+                       background: #e8e8e8;
+                       position: relative;
+                       font-weight: 1000;
+                       font-size: 0.9rem;
+                       -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+                       box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+                       transition: all 1s;
+                       overflow: hidden;
+                       cursor: pointer;
+                   }
+                   
+                   .buttonsec1::before {
+                       content: "";
+                       position: absolute;
+                       top: 0;
+                       left: 0;
+                       height: 100%;
+                       width: 0;
+                       border-radius: 15px;
+                       background-color: #1178ff;
+                       z-index: -1;
+                       -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+                       box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+                       transition: all 750ms
+                   }
+                   
+                   .buttonsec1:hover {
+                       color: #e8e8e8;
+                   }
+                   
+                   .buttonsec1:hover::before {
+                       width: 100%;
+                   }
+                   
+                   .border-gradient-to-r {
+                       border: 8px solid transparent;
+                       border-radius: 1.5rem;
+                       /* match rounded-3xl */
+                       background: linear-gradient(#00000088, #00000088) padding-box, linear-gradient(to right, #503935, #2B3766) border-box;
+                   }
+                   /* sec-5 */
+                   
+                   .btn-sec5 {
+                       font-size: 0.9rem;
+                       padding: 1rem 2.5rem;
+                       border: none;
+                       outline: none;
+                       border-radius: 0.4rem;
+                       cursor: pointer;
+                       text-transform: uppercase;
+                       background-color: rgb(14, 14, 26);
+                       color: rgb(234, 234, 234);
+                       font-weight: 700;
+                       transition: all 0.8s;
+                       box-shadow: 0px 0px 60px #128de5;
+                       -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4));
+                   }
+                   
+                   .btn-sec5:active {
+                       scale: 0.92;
+                   }
+                   
+                   .btn-sec5:hover {
+                       background: rgb(2, 29, 78);
+                       background: linear-gradient(270deg, #7708ff 0%, #0890ff 60%);
+                       color: rgb(4, 4, 38);
+                   }
+                   
+                   .button-g {
+                       background-color: #ffffff00;
+                       color: #fff;
+                       width: fit-content;
+                       height: 2.9em;
+                       border: #45464885 0.2em solid;
+                       border-radius: 11px;
+                       text-align: right;
+                       transition: all 0.6s ease;
+                   }
+                   
+                   .button-g:hover {
+                       background-color: #38363687;
+                       cursor: pointer;
+                   }
+                   
+                   .button-g svg {
+                       width: 1.9em;
+                       /* margin: -0.2em 0.8em 1em; */
+                       position: absolute;
+                       display: flex;
+                       transition: all 0.6s ease;
+                   }
+                   
+                   .button-g:hover svg {
+                       transform: translateX(5px);
+                   }
+                   
+                   .text-g {
+                       margin: 0 2.5em
+                   }
+                   
+                   @keyframes gradient-shimmer {
+                       0% {
+                           background-position: 0% 50%;
+                       }
+                       100% {
+                           background-position: 100% 50%;
+                       }
+                   }
+                   
+                   .animate-gradient-shimmer {
+                       background-size: 200% 200%;
+                       animation: gradient-shimmer 2s ease-in-out infinite;
+                   }
+                   /* styles/circle-gradient.css */
+                   
+                   .circle-gradient {
+                       background: radial-gradient(50% 50% at 50% 50%, rgba(3, 32, 248, 0.4) 0%, rgba(248, 154, 12, 0) 100%);
+                       width: 100%;
+                       height: 100%;
+                   }
