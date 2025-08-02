@@ -265,9 +265,9 @@ export default function Navbar() {
 
           {/* Desktop Actions */}
           <div className="hidden xl:flex items-center space-x-4">
-            <Link href="/" className="border text-white border-gray-500 px-3 py-1 rounded hover:bg-gray-600 transition-all">GitHub ★ 122,282</Link>
-            <Link href="/" className="hover:text-gray-200 text-[1.05rem] font-medium transition-all duration-500">Sign in</Link>
-            <Link href="/" className="bg-[#0695fb] px-4 py-2 text-white rounded hover:bg-[#1241E1] transition-all duration-500">Get Started</Link>
+            <Link href="https://github.com/Constant-Growth-Tech" className="border text-white border-gray-500 px-3 py-1 rounded hover:bg-gray-600 transition-all">GitHub ★ 122,282</Link>
+            <Link href="/Signup" className="hover:text-gray-200 text-[1.05rem] font-medium transition-all duration-500">Sign up</Link>
+            <Link href="/contact" className="bg-[#0695fb] px-4 py-2 text-white rounded hover:bg-[#1241E1] transition-all duration-500">Get Started</Link>
           </div>
 
           {/* Hamburger (Mobile) */}
