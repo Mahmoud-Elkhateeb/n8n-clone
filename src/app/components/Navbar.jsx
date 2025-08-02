@@ -332,9 +332,9 @@ export default function Navbar() {
                 </div>
               ))}
               <div className="pt-2 border-t border-gray-700 flex flex-col space-y-2">
-                <button className="border border-gray-500 px-3 py-1 rounded hover:bg-gray-700 text-left">GitHub ★ 122,282</button>
-                <button className="hover:underline text-left">Sign in</button>
-                <Link href="/" className="bg-[#0695fb] px-4 py-2 rounded hover:bg-[#1241E1] text-white text-center">Get Started</Link>
+                <Link href="https://github.com/Constant-Growth-Tech" className="border border-gray-500 px-3 py-1 rounded hover:bg-gray-700 text-left">GitHub ★ 122,282</Link>
+                <Link href="/Signup" className="hover:underline text-left">Sign up</Link>
+                <Link href="/contact" className="bg-[#0695fb] px-4 py-2 rounded hover:bg-[#1241E1] text-white text-center">Get Started</Link>
               </div>
             </motion.div>
           )}
